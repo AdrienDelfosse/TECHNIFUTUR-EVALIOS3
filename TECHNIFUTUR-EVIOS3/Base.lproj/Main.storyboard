@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9Bc-5g-JPU">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--CryptoLive-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="CryptoLiveViewController" title="CryptoLive" id="BYZ-38-t0r" customClass="CryptoLiveViewController" customModule="TECHNIFUTUR_EVIOS3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="eAz-Gk-VZx">
+                                <rect key="frame" x="10" y="93" width="394" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9w8-pE-GVg"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Default"/>
+                                    <segment title="Croissant"/>
+                                    <segment title="Décroissant"/>
+                                </segments>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Lzh-RT-0DX">
+                                <rect key="frame" x="0.0" y="133" width="414" height="680"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eAz-Gk-VZx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="18s-lL-H4O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eAz-Gk-VZx" secondAttribute="trailing" constant="10" id="1bS-F9-k68"/>
+                            <constraint firstItem="Lzh-RT-0DX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8Ps-64-iNd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lzh-RT-0DX" secondAttribute="trailing" id="F62-tp-Qc7"/>
+                            <constraint firstItem="eAz-Gk-VZx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="cAz-Sf-Ktr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Lzh-RT-0DX" secondAttribute="bottom" id="nyL-ay-DMg"/>
+                            <constraint firstItem="Lzh-RT-0DX" firstAttribute="top" secondItem="eAz-Gk-VZx" secondAttribute="bottom" constant="10" id="pVh-8q-Lk7"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="CryptoLive" id="H8P-m2-8ZV"/>
+                    <navigationItem key="navigationItem" id="3Bg-am-YJA"/>
+                    <connections>
+                        <outlet property="mySegmented" destination="eAz-Gk-VZx" id="AgG-gb-O3z"/>
+                        <outlet property="myTableView" destination="Lzh-RT-0DX" id="0Aa-ef-Thz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="801" y="-548"/>
+        </scene>
+        <!--Crypto Details View Controller-->
+        <scene sceneID="Tlw-HM-g7c">
+            <objects>
+                <viewController storyboardIdentifier="CryptoDetailsViewController" id="v1z-gF-nmU" customClass="CryptoDetailsViewController" customModule="TECHNIFUTUR_EVIOS3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ABg-tz-Krb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bitcoin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b82-Tp-gdJ">
+                                <rect key="frame" x="103" y="44" width="209" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gWt-hx-PAc">
+                                <rect key="frame" x="107" y="102.5" width="200" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="pnM-AW-esI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="njO-as-gOO">
+                                <rect key="frame" x="0.0" y="156.5" width="414" height="656.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NEy-bE-Gc4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NEy-bE-Gc4" firstAttribute="bottom" secondItem="njO-as-gOO" secondAttribute="bottom" id="1Oj-4j-kjS"/>
+                            <constraint firstItem="njO-as-gOO" firstAttribute="leading" secondItem="NEy-bE-Gc4" secondAttribute="leading" id="2QE-Gx-7eL"/>
+                            <constraint firstItem="njO-as-gOO" firstAttribute="trailing" secondItem="NEy-bE-Gc4" secondAttribute="trailing" id="4yu-9N-4Aa"/>
+                            <constraint firstItem="NEy-bE-Gc4" firstAttribute="trailing" secondItem="b82-Tp-gdJ" secondAttribute="trailing" constant="102" id="KwD-T6-NlP"/>
+                            <constraint firstItem="gWt-hx-PAc" firstAttribute="top" secondItem="b82-Tp-gdJ" secondAttribute="bottom" constant="20" id="RVq-fq-x0t"/>
+                            <constraint firstItem="njO-as-gOO" firstAttribute="top" secondItem="gWt-hx-PAc" secondAttribute="bottom" constant="30" id="VKp-yt-Zl2"/>
+                            <constraint firstItem="b82-Tp-gdJ" firstAttribute="top" secondItem="NEy-bE-Gc4" secondAttribute="top" id="boQ-pM-wfZ"/>
+                            <constraint firstItem="b82-Tp-gdJ" firstAttribute="leading" secondItem="NEy-bE-Gc4" secondAttribute="leading" constant="103" id="iu6-4D-zD6"/>
+                            <constraint firstItem="gWt-hx-PAc" firstAttribute="centerX" secondItem="ABg-tz-Krb" secondAttribute="centerX" id="zqh-M7-XQH"/>
+                        </constraints>
+                    </view>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <connections>
+                        <outlet property="myTableView" destination="njO-as-gOO" id="yRz-n1-c7p"/>
+                        <outlet property="nameLabel" destination="b82-Tp-gdJ" id="dzt-mQ-ubG"/>
+                        <outlet property="priceLabel" destination="gWt-hx-PAc" id="gZq-tL-6xk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H8U-rh-GiP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1527.536231884058" y="-526.33928571428567"/>
+        </scene>
+        <!--Cryptos-->
+        <scene sceneID="axQ-5t-Yrk">
+            <objects>
+                <navigationController id="sLy-R5-SgA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Cryptos" id="BcQ-gV-ZYL"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="v3Z-Mq-npi">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="44e-pr-3Qr" kind="relationship" relationship="rootViewController" id="eNg-H8-XVn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Xg-qy-9qX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54" y="197"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="8m5-wu-GcS">
+            <objects>
+                <viewController storyboardIdentifier="CryptoViewController" id="44e-pr-3Qr" customClass="CryptoViewController" customModule="TECHNIFUTUR_EVIOS3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="15q-CD-hZi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LWC-m1-n0c">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dSk-La-Kln"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LWC-m1-n0c" firstAttribute="top" secondItem="dSk-La-Kln" secondAttribute="top" id="Qo4-fh-2a9"/>
+                            <constraint firstItem="dSk-La-Kln" firstAttribute="trailing" secondItem="LWC-m1-n0c" secondAttribute="trailing" id="gyE-4R-Ugv"/>
+                            <constraint firstItem="LWC-m1-n0c" firstAttribute="leading" secondItem="dSk-La-Kln" secondAttribute="leading" id="mWH-v5-7TJ"/>
+                            <constraint firstItem="dSk-La-Kln" firstAttribute="bottom" secondItem="LWC-m1-n0c" secondAttribute="bottom" id="mhx-dL-qsQ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="8y5-pb-0Aj"/>
+                    <navigationItem key="navigationItem" id="jYA-6m-J6O"/>
+                    <connections>
+                        <outlet property="myTableView" destination="LWC-m1-n0c" id="UkB-SW-3JV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7uj-df-aHY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="780" y="197"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="l3e-bW-d9O">
+            <objects>
+                <tabBarController id="9Bc-5g-JPU" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CL2-Qm-HWm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="64g-B3-6sc" kind="relationship" relationship="viewControllers" id="N1R-sJ-JN9"/>
+                        <segue destination="sLy-R5-SgA" kind="relationship" relationship="viewControllers" id="oQ6-db-6eB"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tnU-D8-csq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-645" y="-102"/>
+        </scene>
+        <!--CryptoLive-->
+        <scene sceneID="fgf-4f-YiH">
+            <objects>
+                <navigationController id="64g-B3-6sc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="CryptoLive" id="Ctc-IS-3uB"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HcO-pQ-4cQ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="gT9-NN-isf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mYu-L5-VBB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54" y="-526"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
